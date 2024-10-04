@@ -8,27 +8,62 @@ burger.addEventListener('click', () => {
 
 
 const swiperAlbum1 = new Swiper('.swiper-album-1', {
-   loop: true,
-   slidesPerView: 1,
-   autoplay: {
-       delay: 0,
-       disableOnInteraction: false,
-   },
-   allowTouchMove: false,
+  loop: true,
+  slidesPerView: 0.3,
+  spaceBetween: 8,
 
-   speed: 20000
+  autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+  },
+
+  breakpoints: {
+      500: {
+          slidesPerView: 0.4,
+      },
+
+      700: {
+          slidesPerView: 0.5,
+      },
+
+      900: {
+          slidesPerView: 0.6,
+      }
+  },
+
+  allowTouchMove: false,
+
+  speed: 20000
 });
 
 
 const swiperAlbum2 = new Swiper('.swiper-album-2', {
-   loop: true,
-   slidesPerView: 1,
-   autoplay: {
-       delay: 0,
-       disableOnInteraction: false,
-       reverseDirection: true
-   },
-   allowTouchMove: false,
+  loop: true,
+  slidesPerView: 0.3,
+  spaceBetween: 8,
+  autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+      reverseDirection: true
+  },
 
-   speed: 20000
+  
+  breakpoints: {
+      500: {
+          slidesPerView: 0.4,
+      },
+
+      700: {
+          slidesPerView: 0.5,
+      },
+
+      900: {
+          slidesPerView: 0.6,
+      }
+  },
+
+  
+  allowTouchMove: false,
+
+  speed: 20000
 });
