@@ -419,7 +419,11 @@ body {
 }
 
 .footer {
-  margin-top: 250px;
+  margin-top: 100px;
+  /* @media (max-width:770px) {
+    background-color: #e69aa4;
+    color: #251607 !important;
+  } */
 }
 
 .footer__wrapper {
@@ -531,6 +535,7 @@ body {
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
+  gap: 50px;
   @media (max-width: 1250px) {
     grid-template-columns: 1fr;
   }
@@ -538,6 +543,7 @@ body {
 }
 .incubator__img {
   width: 100%;
+
 }
 .wrappper {
 }
@@ -546,6 +552,7 @@ body {
   padding: 20px;
   gap: 20px;
   text-transform: uppercase;
+  justify-content: space-between;
   img {
     max-width: 160px;
     height: 160px;
@@ -564,10 +571,15 @@ body {
       color: #e69aa4;
     }
   }
+  @media (max-width:500px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 .incubator__cards {
   display: flex;
-  margin: 40px;
+  /* margin: 40px; */
   gap: 20px;
   flex-direction: column;
 }
@@ -593,13 +605,14 @@ body {
 .value__card {
   min-height: 600px;
   color: white;
+  display: grid;
   text-transform: uppercase;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
   padding: 20px;
-  font-size: 25px;  
+  font-size: 25px;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -608,7 +621,6 @@ body {
   img {
     width: 100%;
   }
-  
 
   h2 {
     color: #fff;
@@ -619,9 +631,9 @@ body {
   div {
     writing-mode: vertical-lr;
     margin-left: auto;
-    h4{ 
+    h4 {
       font-size: 25px;
-      font-weight: 600;   
+      font-weight: 600;
     }
 
     p,
@@ -633,10 +645,12 @@ body {
 }
 .value__card-1 {
   background-image: url(./img/value-img1.png);
+  
 }
 
 .value__card-2 {
   background-image: url(./img/value-img2.png);
+  
 }
 .value__card-3 {
   background-image: url(./img/value-img3.png);
@@ -652,15 +666,21 @@ body {
   gap: 50px;
   align-items: center;
   padding-top: 60px;
-  @media (max-width:1500px) {
+  img{
+    max-width: 800px;
+  }
+  @media (max-width: 1500px) {
+    
+  }
+  @media (max-width: 1400px) {
     flex-direction: column;
   }
 }
 .value__wrap-img {
-  /* width: 100%; */
-  @media (max-width:900px) {
+  width: 100%;
+  /* @media (max-width:900px) {
      max-width: 700px;
-  }
+  } */
 }
 .vulue__card {
   display: flex;
@@ -671,21 +691,23 @@ body {
     flex-direction: column;
     gap: 20px;
     align-items: flex-end;
-    @media (max-width:1300px) {
-     display: flex;
-     flex-direction: row;
+    @media (max-width: 1400px) {
+      flex-direction: row;
     }
-    @media (max-width:780px) {
-     flex-direction: column;
-     
+    @media (max-width: 1040px) {
+      flex-direction: column;
+      align-items: center;
     }
-    h4{
-      @media (max-width:750px) {
-        font-size: 75px;
+    h4 {
+      font-size: 75px;
+      @media (max-width: 600px) {
+        font-size: 45px;
       }
-     }
+      @media (max-width: 560px) {
+
+      }
+    }
   }
-  
 }
 
 h4 {
@@ -708,18 +730,16 @@ h4 {
   transition: all 0.3s;
   cursor: pointer;
 
- 
-  &:hover{
-    box-shadow: 10px 10px 0px 1px rgba(255,255,255,0.75);
-    -webkit-box-shadow: 10px 10px 0px 1px rgba(255,255,255,0.75);
-    -moz-box-shadow: 10px 10px 0px 1px rgba(255,255,255,0.75);
+  &:hover {
+    box-shadow: 10px 10px 0px 1px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: 10px 10px 0px 1px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: 10px 10px 0px 1px rgba(255, 255, 255, 0.75);
     background-color: #e69aa4;
     color: #251607;
-    svg path{
-     /* background-color: #251607; */
-     /* fill: #251607; */
-     stroke: #251607;
+    svg path {
+      /* background-color: #251607; */
+      /* fill: #251607; */
+      stroke: #251607;
     }
-
   }
 }
